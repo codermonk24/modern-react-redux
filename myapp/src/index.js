@@ -4,7 +4,21 @@ import ReactDOM from "react-dom";
 
 //2.create a react component
 const App = function () {
-  return <div>Hi there</div>;
+  const buttonText = { text: "click me!" };
+  const labelText = "enter name";
+
+  return (
+    <div>
+      <label className="label" htmlFor="name">
+        {labelText}
+      </label>
+      <input type="text" />
+      {/*<button style=" background-color: "blue", color: "white" "> -- normal html*/}
+      <button style={{ backgroundColor: "blue", color: "white" }}>
+        {buttonText.text}
+      </button>
+    </div>
+  );
 };
 //or
 // const App = ()=>{
